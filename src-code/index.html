@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textura Source Code</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #222;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            font-size: 1.8em;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Card Styling */
+        .card {
+            background-color: #fff;
+            color: #000;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 20px;
+            width: 100%;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .card h2 {
+            margin: 0 0 15px;
+            font-size: 1.8em;
+        }
+
+        .card p {
+            margin: 0 0 20px;
+            font-size: 1.1em;
+        }
+
+        footer {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 25px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        footer button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .view-source-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .view-source-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.5em;
+                padding: 15px;
+            }
+
+            .card {
+                width: 90%;
+                padding: 30px;
+            }
+
+            footer button {
+                padding: 12px 20px;
+                font-size: 1.1em;
+            }
+
+            .view-source-button {
+                padding: 12px 20px;
+                font-size: 1.1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 1.3em;
+                padding: 10px;
+            }
+
+            .card {
+                width: 95%;
+                padding: 20px;
+            }
+
+            footer button {
+                padding: 10px 15px;
+                font-size: 1em;
+            }
+
+            .view-source-button {
+                padding: 10px 15px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Textura Source Code</h1>
+    </header>
+    <main>
+        <div class="card">
+            <h2>View Source Code</h2>
+            <p>Click below to access the full source code for Textura on GitHub:</p>
+            <a href="https://github.com/mohamedlunar/textura" class="view-source-button" target="_blank">View Source Code</a>
+        </div>
+    </main>
+    <footer>
+        <button onclick="navigateBack()">Go Back</button>
+    </footer>
+    <script>
+        function navigateBack() {
+            window.location.href = '/';
+        }
+    </script>
+</body>
+</html>
